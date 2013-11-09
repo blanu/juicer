@@ -1,0 +1,146 @@
+Name:                juicer
+Version:             0.1
+Description:
+Synopsis:            Polymorphic protocol engine
+Category:            Network
+License:             GPL
+License-file:        LICENSE
+Author:              Brandon Wiley
+Maintainer:          brandon@ischool.utexas.edu
+Build-Type:          Simple
+Cabal-Version:       >=1.8
+
+Library
+  Build-Depends:
+    base >= 3 && < 5,
+    bytestring,
+    network,
+    cereal,
+    ghc-prim,
+    binary,
+    containers,
+    directory,
+    split,
+    tagsoup,
+    web-encodings,
+    MissingH,
+    cryptohash
+
+  Exposed-modules:
+    Juicer.Freeze,
+    Juicer.Puree,
+    Juicer.Whip
+
+Executable chop
+  Main-is:           chop.hs
+  Build-Depends:
+    base >= 3 && < 5,
+    juicer,
+    bytestring,
+    network,
+    cereal,
+    ghc-prim,
+    binary,
+    containers,
+    directory,
+    split,
+    tagsoup,
+    web-encodings,
+    MissingH,
+    cryptohash
+
+Executable pour
+  Main-is:           pour.hs
+  Build-Depends:
+    base >= 3 && < 5,
+    juicer,
+    bytestring,
+    network,
+    cereal,
+    ghc-prim,
+    binary,
+    containers,
+    directory,
+    split,
+    tagsoup,
+    web-encodings,
+    MissingH,
+    ansi-terminal,
+    cryptohash
+
+
+Executable grate
+  Main-is:           grate.hs
+  Build-Depends:
+    base >= 3 && < 5,
+    juicer,
+    bytestring,
+    network,
+    cereal,
+    ghc-prim,
+    binary,
+    containers,
+    directory,
+    split,
+    tagsoup,
+    web-encodings,
+    MissingH,
+    ansi-terminal,
+    cryptohash
+
+Executable squeeze
+  Main-is:           squeeze.hs
+  Build-Depends:
+    base >= 3 && < 5,
+    juicer,
+    bytestring,
+    network,
+    cereal,
+    ghc-prim,
+    binary,
+    containers,
+    directory,
+    split,
+    tagsoup,
+    web-encodings,
+    MissingH,
+    ansi-terminal,
+    cryptohash
+
+Executable blend
+  Main-is:           blend.hs
+  Build-Depends:
+    base >= 3 && < 5,
+    juicer,
+    bytestring,
+    network,
+    cereal,
+    ghc-prim,
+    binary,
+    containers,
+    directory,
+    split,
+    tagsoup,
+    web-encodings,
+    MissingH,
+    ansi-terminal,
+    cryptohash
+
+Executable whip
+  Main-is:           whip.hs
+  Build-Depends:
+    base >= 3 && < 5,
+    juicer,
+    bytestring,
+    network,
+    cereal,
+    ghc-prim,
+    binary,
+    containers,
+    directory,
+    split,
+    tagsoup,
+    web-encodings,
+    MissingH,
+    ansi-terminal,
+    cryptohash
