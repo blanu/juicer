@@ -73,7 +73,7 @@ main = do
   args <- getArgs
   case args of
     (rssname:frozenname:manifestname:[]) -> chopit rssname frozenname manifestname
-    otherwise               -> putStrLn "chop [rss] [frozen] [manifest]"
+    otherwise               -> putStrLn "chop [rss] [archive] [manifest]"
 
 chopit :: String -> String -> String -> IO()
 chopit rss frozen manifest = do

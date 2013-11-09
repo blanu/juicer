@@ -17,7 +17,7 @@ main = do
             (Nothing, _) -> return ()
             (_, Nothing) -> return ()
             (Just diff, Just archive) -> blend diff archive archivename
-    otherwise         -> putStrLn "squeeze [diff] [archive]"
+    otherwise         -> putStrLn "blend [diff] [archive]"
 
 blend :: Diff -> Feed -> String -> IO()
 blend diff archive archivename = do
